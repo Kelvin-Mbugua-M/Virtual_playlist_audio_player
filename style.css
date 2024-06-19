@@ -1,0 +1,131 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: all linear 200ms;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #002029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colorButton{
+    height: 64px;
+    width: 64px;
+    background: transparent;
+    background-image: url('/src/dark-mode.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 10;
+    outline: none;
+    border: none;
+}
+.colorButton:active{
+    background-size: 80%;
+}
+.musicPlayer{
+    height: 620px;
+    width: 450px;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+    border: none;
+    border-bottom: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background:#EBFBFF;
+    
+}
+
+.musicPlayer:hover{
+    background-color: linear-gradient(to top,rgb(0, 32, 41) 50%,transparent 50%);
+}
+
+.musicImage{
+    height:300px;
+    width: calc(calc(inherit)*0.8);
+    padding: 10px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background:transparent;
+}
+.image{
+    height: 220px;
+    width: 200px;
+    align-self: center;
+    border: solid 3px #85E7FF;
+    border-radius: 50%;
+    background-color: #00313D;
+    background-image: url('/src/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10px;
+}
+input{
+    height: 2px;
+    width: calc(calc(inherit)*0.8);
+    outline: none;
+    border: none;
+
+    margin:30px 10px 10px 10px;
+}
+.musicImage p{
+    font-size: medium;
+    font-weight: lighter;
+    color:olive;
+    margin: 5px;
+}
+.musicControls{
+    height: 100px;
+    width: calc(calc(inherit)*0.7);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background:transparent;
+}
+.musicControls button{
+    height: 80px;
+    width: 80px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: #0B4F6C;
+    background-size:32px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.musicControls button:active
+{
+    transform: scale(0.8);
+}
+.controlPause{
+    background: rgb(85,63,251);
+    background: radial-gradient(to top, rgba(85,63,251,1) 51%, rgba(252,70,107,1) 100%);
+    background-image: url('/src/pause.png');
+}
+.controlPause:active{
+    background-color:#33D6FF;
+}
+.controlPrev{
+    background-image: url('/src/back.png');
+}
+.controlNext{
+    background-image: url('/src/next.png');
+}
